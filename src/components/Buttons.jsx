@@ -1,9 +1,11 @@
 import satData from "./satData";
+import './styling.css'
+
 
 const Buttons = ({ filterByType, setSat, orbitTypes }) => {
   // console.log(orbitTypes)
   return (
-    <div>
+    <div className="flex-container">
       {orbitTypes.map((type, id) => {
         return (
           <button onClick={() => filterByType(type)} key={id}>
